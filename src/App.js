@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import LoginForm from "./components/form/LoginForm";
+import NavBar from "./components/navBar/NavBar";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import FormInput from "./ui/formInput/FormInput";
+import Card from "./components/card/Card";
+import PractiseForm from "./components/practiseForm/PractiseForm";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <NavBar/>
+      <LoginForm/>
+    
+      <div className="sample-container container d-flex justify-content-center align-items-center mt-5 mb-5 shadow p-5">
+      <PractiseForm/>
+      </div>
     </div>
   );
 }
